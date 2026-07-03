@@ -1,1 +1,0 @@
-console.log('KloudSky website loaded');
