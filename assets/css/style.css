@@ -243,45 +243,83 @@ ul{
 
 .navbar{
 
-    background:rgba(7,28,63,.95);
+    background:rgba(7,28,63,.96);
 
     backdrop-filter:blur(18px);
 
-    padding:18px 0;
+    padding:15px 0;
 
-    transition:.4s;
+    transition:all .35s ease;
 
-    box-shadow:var(--shadow-sm);
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+    z-index:9999;
+
+}
+
+.navbar .container{
+
+    max-width:1320px;
+
+}
+
+.navbar-brand{
+
+    margin-right:40px;
 
 }
 
 .navbar-brand img{
 
-    transition:.3s;
+    height:60px;
+
+    width:auto;
+
+    transition:.3s ease;
 
 }
 
-.navbar-brand img:hover{
+.navbar-brand:hover img{
 
-    transform:scale(1.05);
+    transform:scale(1.04);
+
+}
+
+.navbar-nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
 
 }
 
 .nav-link{
 
-    color:#fff;
+    color:#ffffff;
 
-    margin-left:18px;
+    font-size:16px;
 
-    font-weight:500;
+    font-weight:600;
+
+    padding:12px 14px !important;
 
     position:relative;
+
+    transition:.3s;
 
 }
 
 .nav-link:hover{
 
-    color:#32B6FF;
+    color:var(--secondary);
+
+}
+
+.nav-link.active{
+
+    color:var(--secondary);
 
 }
 
@@ -291,23 +329,25 @@ ul{
 
     position:absolute;
 
-    left:0;
+    left:14px;
 
-    bottom:-8px;
+    bottom:6px;
 
     width:0;
 
     height:2px;
 
-    background:#32B6FF;
+    background:var(--secondary);
 
     transition:.3s;
 
 }
 
-.nav-link:hover::after{
+.nav-link:hover::after,
 
-    width:100%;
+.nav-link.active::after{
+
+    width:calc(100% - 28px);
 
 }
 
@@ -315,7 +355,7 @@ ul{
 
     border:none;
 
-    color:#fff;
+    color:#ffffff;
 
     font-size:28px;
 
@@ -327,6 +367,63 @@ ul{
 
 }
 
+.nav-btn{
+
+    margin-left:28px;
+
+    padding:13px 30px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+@media(max-width:991px){
+
+.navbar{
+
+    padding:12px 0;
+
+}
+
+.navbar-brand{
+
+    margin-right:0;
+
+}
+
+.navbar-nav{
+
+    margin-top:20px;
+
+    gap:0;
+
+}
+
+.nav-link{
+
+    padding:14px 0 !important;
+
+}
+
+.nav-link::after{
+
+    display:none;
+
+}
+
+.nav-btn{
+
+    width:100%;
+
+    margin:20px 0 0;
+
+}
+
+}
 
 /*==============================================================
     Buttons
