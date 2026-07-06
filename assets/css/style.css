@@ -243,15 +243,15 @@ ul{
 
 .navbar{
 
-    background:rgba(7,28,63,.96);
+    background:rgba(7,28,63,.97);
 
-    backdrop-filter:blur(18px);
+    backdrop-filter:blur(16px);
 
-    padding:15px 0;
+    padding:14px 0;
 
     transition:all .35s ease;
 
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
 
     z-index:9999;
 
@@ -265,15 +265,21 @@ ul{
 
 .navbar-brand{
 
-    margin-right:40px;
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-right:45px;
 
 }
 
 .navbar-brand img{
 
-    height:60px;
-
     width:auto;
+
+    height:60px;
 
     transition:.3s ease;
 
@@ -281,7 +287,25 @@ ul{
 
 .navbar-brand:hover img{
 
-    transform:scale(1.04);
+    transform:scale(1.05);
+
+}
+
+/* Brand Name */
+
+.brand-text{
+
+    color:#ffffff;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    line-height:1;
+
+    white-space:nowrap;
 
 }
 
@@ -291,7 +315,7 @@ ul{
 
     align-items:center;
 
-    gap:10px;
+    gap:8px;
 
 }
 
@@ -311,11 +335,7 @@ ul{
 
 }
 
-.nav-link:hover{
-
-    color:var(--secondary);
-
-}
+.nav-link:hover,
 
 .nav-link.active{
 
@@ -339,7 +359,7 @@ ul{
 
     background:var(--secondary);
 
-    transition:.3s;
+    transition:.3s ease;
 
 }
 
@@ -369,15 +389,23 @@ ul{
 
 .nav-btn{
 
-    margin-left:28px;
+    margin-left:26px;
 
-    padding:13px 30px;
+    padding:13px 28px;
 
     border-radius:50px;
 
     font-weight:600;
 
     white-space:nowrap;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.nav-btn:hover{
+
+    box-shadow:var(--shadow-md);
 
 }
 
@@ -391,7 +419,21 @@ ul{
 
 .navbar-brand{
 
+    gap:10px;
+
     margin-right:0;
+
+}
+
+.navbar-brand img{
+
+    height:54px;
+
+}
+
+.brand-text{
+
+    font-size:24px;
 
 }
 
