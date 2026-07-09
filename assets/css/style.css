@@ -247,11 +247,13 @@ ul{
 
     backdrop-filter:blur(16px);
 
+    min-height:90px;
+
     padding:14px 0;
 
     transition:all .35s ease;
 
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    box-shadow:var(--shadow-sm);
 
     z-index:9999;
 
@@ -261,6 +263,10 @@ ul{
 
     max-width:1320px;
 
+    display:flex;
+
+    align-items:center;
+
 }
 
 .navbar-brand{
@@ -269,19 +275,25 @@ ul{
 
     align-items:center;
 
-    gap:14px;
+    gap:18px;
 
-    margin-right:45px;
+    margin-right:50px;
+
+    color:#fff;
+
+    font-weight:700;
+
+    white-space:nowrap;
 
 }
 
 .navbar-brand img{
 
+    height:58px;
+
     width:auto;
 
-    height:60px;
-
-    transition:.3s ease;
+    transition:.3s;
 
 }
 
@@ -297,15 +309,19 @@ ul{
 
     color:#ffffff;
 
-    font-size:28px;
+    font-size:30px;
 
-    font-weight:700;
+    font-weight:800;
 
-    letter-spacing:.5px;
+    letter-spacing:.4px;
 
     line-height:1;
 
-    white-space:nowrap;
+}
+
+.navbar-collapse{
+
+    justify-content:space-between;
 
 }
 
@@ -317,6 +333,8 @@ ul{
 
     gap:8px;
 
+    margin:auto;
+
 }
 
 .nav-link{
@@ -327,7 +345,7 @@ ul{
 
     font-weight:600;
 
-    padding:12px 14px !important;
+    padding:14px 14px !important;
 
     position:relative;
 
@@ -359,7 +377,7 @@ ul{
 
     background:var(--secondary);
 
-    transition:.3s ease;
+    transition:.3s;
 
 }
 
@@ -375,7 +393,7 @@ ul{
 
     border:none;
 
-    color:#ffffff;
+    color:#fff;
 
     font-size:28px;
 
@@ -389,17 +407,23 @@ ul{
 
 .nav-btn{
 
-    margin-left:26px;
+    margin-left:25px;
 
-    padding:13px 28px;
+    min-width:220px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 
     border-radius:50px;
 
     font-weight:600;
 
     white-space:nowrap;
-
-    box-shadow:var(--shadow-sm);
 
 }
 
@@ -413,13 +437,15 @@ ul{
 
 .navbar{
 
+    min-height:78px;
+
     padding:12px 0;
 
 }
 
 .navbar-brand{
 
-    gap:10px;
+    gap:12px;
 
     margin-right:0;
 
@@ -427,7 +453,7 @@ ul{
 
 .navbar-brand img{
 
-    height:54px;
+    height:48px;
 
 }
 
@@ -437,9 +463,13 @@ ul{
 
 }
 
-.navbar-nav{
+.navbar-collapse{
 
-    margin-top:20px;
+    margin-top:18px;
+
+}
+
+.navbar-nav{
 
     gap:0;
 
