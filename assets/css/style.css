@@ -1324,6 +1324,97 @@ ul{
 
 }
 
+.footer .fab:hover{
+
+    color:#32B6FF;
+
+}
+
+
+/*==============================================================
+    Back To Top
+==============================================================*/
+
+#backToTop{
+
+    ...
+}
+
+
+/*==============================================================
+    Animations
+==============================================================*/
+
+@keyframes floatLogo{
+
+    ...
+}
+
+@keyframes bounce{
+
+    ...
+}
+
+
+/*==============================================================
+Hero Page Consistency
+==============================================================*/
+
+.page-hero{
+
+    padding-top:30px;
+
+}
+
+.page-hero .container{
+
+    align-items:center;
+
+}
+
+.page-hero .hero-tag{
+
+    margin-bottom:16px;
+
+}
+
+.page-hero h1{
+
+    margin-top:0;
+
+}
+
+.page-hero img{
+
+    border-radius:24px;
+
+    width:100%;
+
+    height:auto;
+
+    object-fit:cover;
+
+}
+
+.page-hero .breadcrumb{
+
+    margin-top:35px;
+
+    font-size:15px;
+
+}
+
+.page-hero .breadcrumb a{
+
+    color:#32B6FF;
+
+}
+
+.page-hero .breadcrumb-item{
+
+    color:#b9c7dd;
+
+}
 
 /*==============================================================
     Responsive
