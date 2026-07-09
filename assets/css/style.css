@@ -259,11 +259,9 @@ ul{
 
 .navbar .container{
 
-    max-width:1320px;
+    max-width:1440px;
 
-    display:flex;
-
-    align-items:center;
+    width:100%;
 
 }
 
@@ -361,7 +359,7 @@ ul{
 
     color:#fff;
 
-    margin-left:26px;
+    margin-left:20px;
 
     padding:10px 0;
 
@@ -529,7 +527,7 @@ ul{
 
     border-radius:50px;
 
-    padding:15px 38px;
+    padding:15px 32px;
 
     min-height:58px;
 
