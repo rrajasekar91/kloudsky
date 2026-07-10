@@ -1559,3 +1559,35 @@ Hero Page Consistency
     box-shadow:0 15px 40px rgba(0,0,0,.18);
 
 }
+
+/* =====================================================
+   VERSION 1.1 FINAL
+   Mobile Overflow Fix
+===================================================== */
+
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+.container,
+.container-fluid{
+    max-width:100%;
+}
+
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.hero-section,
+.page-hero{
+    overflow:hidden;
+}
