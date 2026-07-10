@@ -913,19 +913,23 @@ ul{
 
 .feature-card{
 
-    background:#ffffff;
+    background:#fff;
 
-    border-radius:20px;
+    border-radius:28px;
 
-    padding:40px 30px;
+    padding:48px;
+
+    text-align:left;
 
     height:100%;
 
-    transition:.35s;
+    display:flex;
 
-    border:1px solid var(--border);
+    flex-direction:column;
 
-    box-shadow:var(--shadow-sm);
+    justify-content:flex-start;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 
 }
 
@@ -939,41 +943,54 @@ ul{
 
 .feature-card i{
 
-    width:75px;
+    width:94px;
 
-    height:75px;
-
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-
-    color:#fff;
+    height:94px;
 
     border-radius:50%;
 
-    display:flex;
+    background:linear-gradient(135deg,#1F7BFF,#39B8FF);
 
-    justify-content:center;
+    color:#fff;
+
+    display:flex;
 
     align-items:center;
 
-    font-size:30px;
+    justify-content:center;
 
-    margin-bottom:25px;
+    font-size:36px;
+
+    margin-bottom:28px;
+
+    margin-left:0;
+
 
 }
 
 .feature-card h4{
 
-    color:var(--dark);
+    font-size:38px;
 
     font-weight:700;
 
-    margin-bottom:15px;
+    color:#071C3F;
+
+    margin-bottom:18px;
+
+    text-align:left;
 
 }
 
 .feature-card p{
 
-    color:var(--gray);
+    color:#5D6778;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    text-align:left;
 
 }
 
@@ -1663,6 +1680,28 @@ Hero Page Consistency
 .footer{
 
     text-align:center;
+
+}
+
+.feature-card{
+
+    padding:35px;
+
+}
+
+.feature-icon{
+
+    margin-left:0;
+
+    margin-right:0;
+
+}
+
+.feature-card h4,
+
+.feature-card p{
+
+    text-align:left;
 
 }
 
