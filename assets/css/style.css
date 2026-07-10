@@ -99,6 +99,8 @@ img{
 
     display:block;
 
+    border-radius:20px;
+
 }
 
 a{
@@ -121,7 +123,7 @@ ul{
 
 .section-padding{
 
-    padding:100px 0;
+    padding:70px 0;
 
 }
 
@@ -604,7 +606,7 @@ ul{
 
     position:relative;
 
-    min-height:850px;
+    min-height:90px;
 
     display:flex;
 
@@ -616,9 +618,9 @@ ul{
 
     color:#fff;
 
-    padding-top:130px;
+    padding-top:120px;
 
-    padding-bottom:90px;
+    padding-bottom:70px;
 
 }
 
@@ -645,9 +647,7 @@ ul{
 .hero-section .row{
 
     align-items:center;
-
-    min-height:calc(100vh - 135px);
-
+   
 }
 
 .hero-content{
@@ -764,9 +764,9 @@ ul{
 
     width:100%;
 
-    max-width:620px;
+    max-width:650px;
 
-    height:400px;
+    height:430px;
 
     object-fit:cover;
 
@@ -824,9 +824,9 @@ ul{
 
     width:100%;
 
-    max-width:620px;
+    max-width:650px;
 
-    height:400px;
+    height:430px;
 
     object-fit:cover;
 
@@ -1380,7 +1380,9 @@ Hero Page Consistency
 
 .page-hero{
 
-    padding-top:30px;
+    padding-top:140px;
+
+    padding-bottom:70px;
 
 }
 
@@ -1406,15 +1408,17 @@ Hero Page Consistency
 
     width:100%;
 
-    max-width:620px;
+    max-width:650px;
 
-    height:400px;
+    height:430px;
 
     object-fit:cover;
 
     border-radius:24px;
 
     display:block;
+
+    margin:auto;
 
 }
 
@@ -1523,5 +1527,35 @@ Hero Page Consistency
     text-align:center;
 
 }
+
+}
+
+/*==============================================================
+    Internal Page Hero Images
+==============================================================*/
+
+.page-hero .col-lg-6:last-child{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.page-hero img{
+
+    width:100%;
+
+    max-width:650px;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:24px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
 
 }
