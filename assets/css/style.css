@@ -1457,6 +1457,130 @@ Hero Page Consistency
 }
 
 /*==============================================================
+    Professional Journey Timeline
+==============================================================*/
+
+.timeline{
+
+    position:relative;
+
+    max-width:1000px;
+
+    margin:70px auto 0;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:120px;
+
+    top:0;
+
+    bottom:0;
+
+    width:4px;
+
+    background:linear-gradient(180deg,#32B6FF,#0A53BE);
+
+    border-radius:10px;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+    margin-bottom:60px;
+
+    position:relative;
+
+}
+
+.timeline-year{
+
+    width:90px;
+
+    min-width:90px;
+
+    height:90px;
+
+    background:linear-gradient(135deg,#32B6FF,#0A53BE);
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.timeline-content h4{
+
+    margin-bottom:15px;
+
+    color:#071C3F;
+
+    font-weight:700;
+
+}
+
+.timeline-content p{
+
+    margin:0;
+
+    color:#5B6575;
+
+    line-height:1.8;
+
+}
+
+/*==============================================================
     Responsive
 ==============================================================*/
 
@@ -1604,4 +1728,48 @@ img{
 .hero-section,
 .page-hero{
     overflow:hidden;
+}
+
+/* Professional Journey Responsive */
+
+.timeline{
+
+    margin-top:50px;
+
+}
+
+.timeline::before{
+
+    display:none;
+
+}
+
+.timeline-item{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:20px;
+
+}
+
+.timeline-year{
+
+    width:80px;
+
+    height:80px;
+
+    font-size:18px;
+
+}
+
+.timeline-content{
+
+    width:100%;
+
+    padding:25px;
+
 }
